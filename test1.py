@@ -12,4 +12,4 @@ def out_fun(msg):
     print(msg)
 
 
-out_fun("ok")
+out_fun("ok good")
