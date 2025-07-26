@@ -1,0 +1,59 @@
+/* Base styles for both themes */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 1s;
+  }
+  
+  .chat-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .chat-box {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #111;
+    border-radius: 10px;
+    color: wheat;
+  }
+  
+  input {
+    width: 70%;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  button {
+    padding: 8px 12px;
+    margin: 5px;
+    background: #00c6ff;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* 🌍 Earth Theme */
+  .earth-theme {
+    background: linear-gradient(to bottom, #0b3d91, #0d74a0, #43cea2, #f0f0f0);
+    color: #000;
+  }
+  
+  /* 🌌 Space Theme */
+  .space-theme {
+    background: radial-gradient(circle at top, #1a1a2e, #0f0f1f, #000000);
+    color: #f0f0f0;
+  }
+  
