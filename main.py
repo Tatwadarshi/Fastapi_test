@@ -4,6 +4,8 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 import uvicorn
 
+host = "127.0.0.1"
+port = 4000
 
 app = FastAPI()
 
@@ -21,4 +23,4 @@ async def read_index(request: Request):
     return templates.TemplateResponse("index.html", {"request": request, "title": "Space Bot"})
 
 if __name__ == "__main__":
-    uvicorn.run("main:app")
+    uvicorn.run("main:app", host=host, port=port, reload=True)
